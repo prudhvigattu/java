@@ -1,0 +1,53 @@
+package placementpreparation;
+
+public class DecisionMakingStatements {
+
+	public static void main(String[] args) {
+		//Simple if
+		int a=10,b=20;
+		if(a!=b) {
+			System.out.println("a is smaller");//executes
+		}
+		
+		//if-else
+		int c=30,d=30;
+		if(c==d) {
+			System.out.println("both are equal");//executes
+		}
+		else {
+			System.out.println("both are not equal");
+		}
+		
+		//else if
+		if(c<=d) {
+			System.out.println("d is greater");//executes
+		}
+		else if(c>d) {
+			System.out.println("c is greater");
+		}
+		else if(c==d) {
+			System.out.println("Both are equal");
+		}
+		
+		
+		//nested if
+		int e=40,f=50,g=30;
+		if(e>f) {
+			if(e>g) {
+				System.out.println("e is greater");
+			}
+			else {
+				System.out.println("g iis greater");
+			}
+		}
+		else if(f>g) {
+			System.out.println("f is greater");//executes
+		}
+		else {
+			System.out.println("g is greater");
+		}
+		
+
+	}
+
+}
