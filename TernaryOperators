@@ -1,0 +1,16 @@
+package placementpreparation;
+
+public class TernaryOperator {
+
+	public static void main(String[] args) {
+		float a=50.0f,b=40.0f;
+		float c=(a<b)?a:b;
+		System.out.print(c);//40.0
+		char e='B',f='D';
+		char d=(e<f)?e:f;
+		System.out.print(d);//B
+		
+
+	}
+
+}
