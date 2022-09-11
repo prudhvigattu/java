@@ -1,0 +1,15 @@
+package placementpreparation;
+
+public class ShiftOperators {
+
+	public static void main(String[] args) {
+		//left shift
+		int a=10;
+		a=a<<2;
+		System.out.println(a);//10*2^2=40
+		//right shift
+		System.out.println(a>>4);//(40//2^4=2)
+		
+	}
+
+}
