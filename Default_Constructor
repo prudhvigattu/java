@@ -1,0 +1,22 @@
+package placementpreparation;
+class Bike
+{
+	String name;
+	int model;
+	Bike()
+	{
+		name="ktm";
+		model=2020;
+		
+	}
+}
+public class Default_Constructor {
+
+	public static void main(String[] args) {
+		Bike s=new Bike();
+		System.out.print(s.name);
+		System.out.print(s.model);
+	}
+
+}
+
