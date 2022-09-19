@@ -1,0 +1,28 @@
+package placementpreparation;
+class Area{
+	int breadth;
+	int length;
+	Area()
+	{
+		length=10;
+		breadth=20;
+		System.out.println(length*breadth);
+	
+	}
+	Area(Area s)
+	{
+		length=s.length;
+		breadth=s.breadth;
+		System.out.println(length*breadth);
+	}
+}
+public class Copy_Constructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Area s1=new Area();
+		Area s2=new Area(s1);
+
+	}
+
+}
