@@ -1,0 +1,26 @@
+package placementpreparation;
+
+public class Main_Method {
+
+	public static void main(String[] args) {
+		Static_Variable s=new Static_Variable(1,"prudhvi");
+		Static_Variable d=new Static_Variable(2,"Dharmesh");
+		s.display();
+		d.display();
+	}
+
+}
+class Static_Variable{
+	int roll;
+	String name;
+	static String college="Aditya";
+	Static_Variable(int a,String b){
+		roll=a;
+		name=b;
+		
+	}
+	void display()
+	{
+		System.out.println("ROLL:"+roll+"\nNAME:"+name+"\ncollege:"+college);
+	}
+}
