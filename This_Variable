@@ -1,0 +1,28 @@
+package placementpreparation;
+
+public class This_Variable {
+
+	public static void main(String[] args) {
+		Details d=new Details(514,"prudhvi","cse");
+		d.display();
+
+	}
+
+}
+class Details
+{
+	int roll;
+	String name;
+	String branch;
+	Details(int roll,String name,String branch)
+	{
+		this.roll=roll;
+		this.name=name;
+		this.branch=branch;
+	}
+	void display()
+	{
+		System.out.println("Roll:"+roll+"\nname:"+name+"\nbranch:"+branch);
+	}
+	
+}
