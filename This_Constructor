@@ -1,0 +1,22 @@
+package placementpreparation;
+
+public class This_Constructor {
+
+	public static void main(String[] args) {
+		Student1 s= new Student1();
+
+	}
+
+}
+class Student1
+{
+	String Roll="20P31A0514";
+	Student1(){
+		this("Prudhvi");
+		System.out.println("My Roll no is "+Roll);
+	}
+	Student1(String name){
+		System.out.println("My name is "+name);
+		
+	}
+}
