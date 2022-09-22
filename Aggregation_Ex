@@ -1,0 +1,34 @@
+package placementpreparation;
+class Address{
+	String village;
+	String street;
+	Address(String village,String street){
+		this.village=village;
+		this.street=street;
+	}
+}
+class Employee
+{
+	int id;
+	Address address;
+	Employee(int id,Address address)
+	{
+		this.id=id;
+		this.address=address;
+	}
+	void display()
+	{
+		System.out.println("Id:"+id);
+		System.out.println("village:"+address.village+"\nstreet:"+address.street);
+	}
+}
+public class Aggregation_Ex {
+
+	public static void main(String[] args) {
+		Address a=new Address("laxmipuram","ramalayam");
+		Employee e=new Employee(1,a);
+		e.display();
+
+	}
+
+}
