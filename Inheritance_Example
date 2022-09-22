@@ -1,0 +1,33 @@
+package placementpreparation;
+interface A
+{
+	default void run()
+	{
+		System.out.println("Running");
+	}
+}
+interface B
+{
+	default void walk()
+	{
+		System.out.println("Walking");
+	}
+}
+class C implements A,B
+{
+	void jog()
+	{
+		System.out.println("Jogging");
+	}
+}
+public class Inheritance_Example {
+
+	public static void main(String[] args) {
+		C c=new C();
+		c.run();
+		c.walk();
+		c.jog();
+
+	}
+
+}
