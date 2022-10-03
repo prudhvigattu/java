@@ -1,0 +1,23 @@
+package placementpreparation;
+
+public class Method_Overloading {
+
+	public static void main(String[] args) {
+		Method_Overloading c=new Method_Overloading();
+		System.out.println(c.sum(2, 3));//sum(int a,int b) will execute
+		System.out.println(c.sum(2,3,5));//sum(int a,int b,int c) will execute
+		System.out.println(c.sum(2.0,3.0));//sum(double a,double b) will execute
+
+	}
+    int sum(int a,int b) {
+		return a+b;
+    }
+	int sum(int a,int b,int c) {
+		return a+b+c;
+	}
+	double sum(double a,double b)
+	{
+		return a+b;
+	}
+}
+
