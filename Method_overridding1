@@ -1,0 +1,35 @@
+package placementpreparation;
+class Price
+{
+	int getPrice()
+	{
+		return 0;
+	}
+}
+class Mobile extends Price{
+	int getPrice()
+	{
+		System.out.println("Mobile price");
+		return 10000;
+	}
+}
+class Laptop extends Price
+{
+	int getPrice()
+	{
+		System.out.println("Laptop price");
+		return 45000;
+	}
+}
+
+public class Method_overridding1 {
+
+	public static void main(String[] args) {
+		Mobile m=new Mobile();
+		System.out.println(m.getPrice());
+		Laptop l=new Laptop();
+		System.out.println(l.getPrice());
+
+	}
+
+}
