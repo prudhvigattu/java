@@ -1,0 +1,15 @@
+package placementpreparation;
+
+public class Main_Overloading {
+
+	public static void main(String[] args) //it will execute
+	{
+		System.out.println("main with args");
+
+	}
+	public static void main(String args) {
+		System.out.println("main with string");
+
+	}
+
+}
