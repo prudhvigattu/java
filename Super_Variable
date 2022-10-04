@@ -1,0 +1,19 @@
+package placementpreparation;
+class Dog
+{
+	String color="black";
+}
+class  Puppy extends Dog
+{
+	String color="white";
+	String s=super.color;
+}
+public class Super_Variable {
+	public static void main(String args[]) {
+		Puppy p=new Puppy();
+		System.out.println("puppy color is:"+p.color);//white
+		System.out.print("Dog color is:"+p.s);//black
+		
+	}
+
+}
