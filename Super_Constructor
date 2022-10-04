@@ -1,0 +1,25 @@
+package placementpreparation;
+class Ford
+{
+	Ford(String a,String b)
+	{
+		
+		System.out.println("This is Ford class.Its price ranging from:"+a+" to "+b);
+	}
+}
+class Tata extends Ford
+{
+	Tata(String a,String b)
+	{	
+		super(a,b);
+		System.out.println("This is Tata class constructor");
+	}
+}
+public class Super_Constructor {
+
+	public static void main(String[] args) {
+		Tata t=new Tata("1cr","4cr");
+
+	}
+
+}
