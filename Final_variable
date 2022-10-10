@@ -1,0 +1,16 @@
+package placementpreparation;
+
+public class Final_variable {
+	final int a;
+    Final_variable()
+	{
+		a=10;
+		
+	}
+
+	public static void main(String[] args) {
+		Final_variable b=new Final_variable();
+		System.out.println("A value is:"+b.a);//10
+	}
+
+}
