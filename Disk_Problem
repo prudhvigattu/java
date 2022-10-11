@@ -1,0 +1,20 @@
+/*Consider a disk has 2 surfaces.Each surface is divided into t tracks 
+ * and each track is divided into s sectors.Each sector is again divided into 
+ * b blocks.If each block occupies 512 bytes of memery find the max capacity of the 
+ * disk to hold the information.
+ */
+package placementpreparation;
+import java.util.*;
+class Disk_Problem
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter values:");
+        int t=sc.nextInt();
+        int s=sc.nextInt();
+        int b=sc.nextInt();
+        long ans=t*s*b*2*512;
+        System.out.println(ans);
+    }
+}
