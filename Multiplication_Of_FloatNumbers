@@ -12,4 +12,3 @@ public class Multiplication_Of_FloatNumbers {
 	        System.out.println(f);
 	    }
 	}
-}
