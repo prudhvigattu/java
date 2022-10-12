@@ -1,0 +1,70 @@
+/ *Two friends Ramya and swathi wants to play a game.
+Here the game is  one of the friend ramya says that,she will give  a
+number from 1 to 12 it represents a month number and another friend swathi has to 
+print the season name for that respective month number.
+Assume:
+4,5,6-summer
+7,8,9,10-Rainy
+11,12,1-Winter
+2,3-Spring
+If the input is out of range then print -1 as an output.
+*/
+import java.util.*;
+class Seasons
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        if(n==4||n==5||n==6)
+        {
+            System.out.println("Summer");
+        }
+        else if(n==7||n==8||n==9||n==10)
+        {
+            System.out.println("Rainy");
+        }
+        else if(n==11||n==12||n==1)
+        {
+            System.out.println("Winter");
+        }
+        else if(n==2||n==3)
+        {
+            System.out.println("Spring");
+        }
+        else
+        {
+            System.out.println("-1");
+        }
+        
+    }
+}import java.util.*;
+class Seasons
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        if(n==4||n==5||n==6)
+        {
+            System.out.println("Summer");
+        }
+        else if(n==7||n==8||n==9||n==10)
+        {
+            System.out.println("Rainy");
+        }
+        else if(n==11||n==12||n==1)
+        {
+            System.out.println("Winter");
+        }
+        else if(n==2||n==3)
+        {
+            System.out.println("Spring");
+        }
+        else
+        {
+            System.out.println("-1");
+        }
+        
+    }
+}
