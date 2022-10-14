@@ -28,7 +28,7 @@ class car extends bike
 public class Abstract_Class {
 
 	public static void main(String[] args) {
-		car b=new car();
+		bike b=new car();
 		b.display();
 		b.bike1();
 		b.bike2();
