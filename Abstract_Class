@@ -1,0 +1,46 @@
+package placementpreparation;
+abstract class bike
+{
+bike(){
+	System.out.println("bike class constructor");
+}
+	void display()
+	{
+		System.out.println("abstract class");
+	}
+	abstract void bike1();
+	final void bike2() {
+		System.out.println("abstract class final method");
+	}
+}
+class car extends bike
+{
+	void display()
+	{
+		super.display();
+		System.out.println("car method");
+	}
+	void bike1()
+	{
+		System.out.println("abstract method of bike class");
+	}
+}
+public class Abstract_Class {
+
+	public static void main(String[] args) {
+		car b=new car();
+		b.display();
+		b.bike1();
+		b.bike2();
+
+	}
+
+}
+/*
+output:
+bike class constructor
+abstract class
+car method
+abstract method of bike class
+abstract class final method
+*/
