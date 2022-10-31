@@ -1,0 +1,39 @@
+/*finding the minimum element in the given array*/
+package placementpreparation;
+import java.util.*;
+public class Min_ArrayElement {
+	Scanner sc=new Scanner(System.in);
+	int a[]=new int[5];
+	
+	void setData()
+	{
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.println("Enter element at the index"+i);
+			a[i]=sc.nextInt();
+		}
+	}
+	int index;
+	void min()
+	{
+		int mini=a[0];
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]<mini)
+			{
+				mini=a[i];
+				index=i;
+			}
+		}
+		System.out.println("minimum element in the array is:"+mini+"-->found at index:"+index);
+		
+	}
+
+	public static void main(String[] args) {
+		Min_ArrayElement e=new Min_ArrayElement();
+		e.setData();
+		e.min();
+
+	}
+
+}
