@@ -1,0 +1,19 @@
+/*program to copy one array to another array using arraycopy() method*/
+import java.util.*;
+public class Array_Copy
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+		char copyfrom[]=new char[7];
+		for(int i=0;i<copyfrom.length;i++)
+		{
+		    System.out.println("Enter single-character at index-"+i);
+		    copyfrom[i]=sc.next().charAt(0);
+		}
+		char copyto[]=new char[7];
+		copyto[0]='s';
+		copyto[1]='r';
+		System.arraycopy(copyfrom,2,copyto,2,4);
+		System.out.println(copyto);
+	}
+}
