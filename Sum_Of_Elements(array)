@@ -1,0 +1,24 @@
+/*sum of elements in the array*/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no.of elements to be stored in the array:");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    System.out.println("Enter value at index-"+i+":");
+		    a[i]=sc.nextInt();
+		    
+		}
+		System.out.println("The sum of all the elements in the array is:");
+		int sum=0;
+		for(int i=0;i<n;i++)
+		{
+		    sum=sum+a[i];
+		}
+		System.out.println(sum);
+	}
+}
