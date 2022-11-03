@@ -1,0 +1,32 @@
+/*Java Program to right rotate the elements of an array*/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no.of elements to be stored in the array:");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+		    System.out.println("Enter value at index-"+i+":");
+		    a[i]=sc.nextInt();
+		    
+		}
+		System.out.println("Enter no of positions:");
+		int r=sc.nextInt();
+		for(int i=1;i<=r;i++)
+		{
+		    int temp=a[n-1];
+		    for(int j=n-1;j>0;j--)
+		    {
+		        a[j]=a[j-1];
+		    }
+		    a[0]=temp;
+		}
+		for(int i=0;i<n;i++)
+		{
+		    System.out.println(a[i]);
+		}
+	}
+}
