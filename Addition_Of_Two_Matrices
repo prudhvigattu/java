@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter no.of rows:");
+		int r=sc.nextInt();
+		System.out.println("Enter no.of columns:");
+		int c=sc.nextInt();
+		int a[][]=new int[r][c];
+		int b[][]=new int[r][c];
+		System.out.println("Enter elements into matrix a:");
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        System.out.println("Enter element at row-"+i+" and column-"+j+":");
+		        a[i][j]=sc.nextInt();
+		    }
+		}
+		System.out.println("Enter elements into matrix b:");
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        System.out.println("Enter element at row-"+i+" and column-"+j+":");
+		        b[i][j]=sc.nextInt();
+		    }
+		}
+		System.out.println("Addition of two matrices is:");
+		for(int i=0;i<r;i++)
+		{
+		    for(int j=0;j<c;j++)
+		    {
+		        System.out.print((a[i][j]+b[i][j])+" ");
+		       
+		    }
+		    System.out.println();
+		}
+		
+	}
+}
