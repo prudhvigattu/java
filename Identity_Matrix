@@ -1,0 +1,53 @@
+/*Java Program to determine whether a given matrix is an identity matrix*/
+/*A matrix is said to be an identity matrix if it is a square matrix in which elements of principle diagonal are ones, and the rest of the elements are zeroes.*/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter row size:");
+		int r=sc.nextInt();
+		System.out.println("Enter column size:");
+		int c=sc.nextInt();
+		int a[][]=new int[r][c];
+		if(r==c)
+		{
+		    for(int i=0;i<r;i++)
+		    {
+		        for(int j=0;j<c;j++)
+		        {
+		            a[i][j]=sc.nextInt();
+		        }
+		    }
+		}
+		boolean flag=true;
+		if(r!=c)
+		{
+		    System.out.println("Matrix should be square matrix");
+		}
+		else{
+		    for(int i=0;i<r;i++)
+		    {
+		        for(int j=0;j<c;j++)
+		        {
+		            if((i==j)&&a[i][j]!=1)
+		            {
+		                flag=false;
+		                break;
+		            }
+		            else if((i!=j)&&a[i][j]!=0)
+		            {
+		                flag=false;
+		                break;
+		            }
+		        }
+		    }
+		    if(flag)
+		System.out.println("Matrix is identity matrix");
+		else
+		System.out.println("Matrix is not a identity matrix");
+		}
+		
+	}
+}
+		
