@@ -1,0 +1,14 @@
+package placement;
+import java.util.*;
+public class Random_Number {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter range to generate random number:");
+		int n=sc.nextInt();
+	Random r=new Random();
+	int s=r.nextInt(n);
+	System.out.println(s);
+
+}
+}
