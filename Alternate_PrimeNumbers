@@ -1,0 +1,38 @@
+/*program to print alternative prime numbers*/
+package placement;
+import java.util.Scanner;
+public class Alternate_PrimeNumbers {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int count=0;
+		System.out.println("Enter range of a number:");
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		int i,j,z=0;
+		for(j=2;j<=n;j++)
+		{
+			count=0;
+		for(i=1;i<=j;i++) {
+			if(j%i==0)
+			{
+				count++;
+			}
+		}
+		if(count==2)
+		{
+			a[z]=j;
+			z++;
+		}
+		}
+		for(i=0;i<n;i=i+2)
+		{
+			if(a[i]!=0)
+			{
+				System.out.println(a[i]);
+			}
+				
+		}
+	}
+
+}
