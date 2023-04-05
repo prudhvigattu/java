@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Armstrong
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n;
+		System.out.println("Enter a number:");
+		n=sc.nextInt();
+		int rem,temp=n,digit=0,num=0,n1=n;
+		while(n>0)
+		{
+		   rem=n%10;
+		   n=n/10;
+		   digit++;
+		}
+		while(temp>0)
+		{
+		    rem=temp%10;
+		    num+=Math.pow(rem,digit);
+		    temp=temp/10;
+		}
+		if(n1==num)
+		{
+		    System.out.println("Armstrong");
+		}
+		else
+		{
+		    System.out.println("NOT");
+		}
+		
+	}
+}
