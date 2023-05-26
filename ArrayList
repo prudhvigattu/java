@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<Integer> list=new ArrayList<>(5);
+        Scanner sc=new Scanner(System.in);
+        //adding elements
+//        list.add(1);
+//        list.add(2);
+//        list.add(3);
+//        list.add(4);
+//        list.add(5);
+//        for (int i = 0; i < 5; i++) {
+//            System.out.println(list.get(i));
+//        }
+//        list.set(1,3);
+//        for (int i = 0; i < 5; i++) {
+//            System.out.println(list.get(i));
+//        }
+        //adding elements at runtime
+        for (int i = 0; i < 6; i++) {
+            list.add(sc.nextInt());
+        }
+        Collections.sort(list);
+        //printing
+        System.out.println(list);
+
+    }
+}
