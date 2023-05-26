@@ -1,0 +1,23 @@
+/*all three digit armstrong numbers*/
+public class ArmstrongNumbers {
+    public static void main(String[] args) {
+
+        for(int i=100;i<=999;i++)
+        {
+           isArmstrong(i);
+        }
+    }
+    static void isArmstrong(int i)
+    {
+        int sum=0,rem=0;
+        int temp=i;
+        while(i>0)
+        {
+            rem=i%10;
+            sum=((int)(Math.pow(rem,3)))+sum;
+            i=i/10;
+        }
+        if(sum==temp)
+            System.out.println(sum);
+    }
+}
